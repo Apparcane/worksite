@@ -116,7 +116,12 @@ a {
 .comments-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.small-comment-container {
+    max-width: 350px;
 }
 
 .contact {
@@ -124,4 +129,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.email, .telephone {
+    color: gray;
+    transition: all 0.2s;
+}
+
+.email:hover, .telephone:hover {
+    color: black;
 }
