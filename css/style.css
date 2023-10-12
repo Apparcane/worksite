@@ -13,7 +13,6 @@ a {
 {
     padding-top: 10px;
     padding-left: 50px;
-    margin-bottom: 40px;
 }
 
 .circle {
@@ -34,7 +33,8 @@ a {
 }
 
 .main {
-    padding-left: 50px;
+    padding: 50px;
+    padding-right: 0px;
     display: flex;
     justify-content: space-between;
     font-size: 40px;
@@ -74,4 +74,54 @@ a {
 .about h1 {
     font-weight: normal;
     display: flex;
+}
+
+.skills {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills img {
+    margin-left: 20px;
+}
+
+.testimonials {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials h1 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.big-comment-container {
+    padding: 50px;
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
