@@ -33,11 +33,10 @@ a {
 }
 
 .main {
-    padding: 50px;
-    padding-right: 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 40px;
+    align-items: center;
+    padding: 50px;
 }
 
 .main p {
@@ -58,12 +57,12 @@ a {
 }
 
 .about {
-    background-color: black;
-    color: white;
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
 }
 
 .about div {
@@ -77,10 +76,10 @@ a {
 }
 
 .skills {
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
 .skills img {
@@ -88,13 +87,12 @@ a {
 }
 
 .testimonials {
-    background-color: black;
-    color: white;
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 50px;
 }
 
 .testimonials h1 {
@@ -125,10 +123,10 @@ a {
 }
 
 .contact {
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
 .email, .telephone {
@@ -138,4 +136,58 @@ a {
 
 .email:hover, .telephone:hover {
     color: black;
+}
+
+@media (min-width: 1400px) {
+
+    .main, .about, .skills, .testimonials, .contact {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 1000px) { 
+    .main {
+        font-size: 40px;
+        padding-right: 0px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 999px) {
+    
+    img {
+        max-width: 400px;
+    }
+    
+    .main {
+        padding-right: 0px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    img {
+        max-width: 350px;
+    }
+
+    .container {
+        margin: 20px;
+        margin-top: 0;
+    }
+
+    .main, .about, .skills, .testimonials, .contact {
+        flex-direction: column;
+    }
 }
